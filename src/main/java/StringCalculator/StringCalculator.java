@@ -3,6 +3,8 @@
  */
 package StringCalculator;
 
+import java.util.Arrays;
+
 public class StringCalculator {
 
     public int add(String string) {
@@ -12,7 +14,14 @@ public class StringCalculator {
             return 0;
         }
 
-        String[] array = string.split("[,\\n]");
+        String str = string.replace('\n', ',').replace("//", ",");
+        String[] array = str.split(",");
+
+        String str3;
+        if(!array[0].matches("-?\\d+(\\.\\d+)?")) {
+            array = array[2].split(array[1]);
+        }
+
         for(String s : array) {
             result += Integer.parseInt(s);
         }

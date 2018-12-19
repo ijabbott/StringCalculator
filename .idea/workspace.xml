@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a7bc932d-608d-4945-97b6-efda6209c6a3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/StringCalculator/StringCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/StringCalculator/StringCalculator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/StringCalculator/StringCalculatorTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StringCalculator/StringCalculatorTests.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -20,20 +21,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/StringCalculator/StringCalculatorTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="454">
-              <caret line="35" column="32" lean-forward="true" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
+            <state relative-caret-position="166">
+              <caret line="28" selection-start-line="28" selection-end-line="28" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/StringCalculator/StringCalculator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="209">
+              <caret line="16" column="65" selection-start-line="16" selection-start-column="65" selection-end-line="16" selection-end-column="65" />
             </state>
           </provider>
         </entry>
@@ -53,8 +54,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/StringCalculator/StringCalculator.java" />
         <option value="$PROJECT_DIR$/src/test/java/StringCalculator/StringCalculatorTests.java" />
+        <option value="$PROJECT_DIR$/src/main/java/StringCalculator/StringCalculator.java" />
       </list>
     </option>
   </component>
@@ -134,7 +135,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545237394885" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545240676093" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -181,38 +182,44 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1545233355707</updated>
-      <workItem from="1545233357787" duration="2391000" />
+      <workItem from="1545233357787" duration="5518000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="StringCalculatorTests - 2018.12.19 at 09h 55m 36s.xml">
+    <history-entry file="StringCalculatorTests - 2018.12.19 at 11h 18m 33s.xml">
       <configuration name="StringCalculatorTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StringCalculatorTests - 2018.12.19 at 09h 55m 50s.xml">
+    <history-entry file="StringCalculatorTests - 2018.12.19 at 11h 18m 48s.xml">
       <configuration name="StringCalculatorTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StringCalculatorTests - 2018.12.19 at 10h 07m 04s.xml">
+    <history-entry file="StringCalculatorTests - 2018.12.19 at 11h 19m 13s.xml">
       <configuration name="StringCalculatorTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StringCalculatorTests - 2018.12.19 at 10h 09m 07s.xml">
+    <history-entry file="StringCalculatorTests - 2018.12.19 at 11h 20m 36s.xml">
       <configuration name="StringCalculatorTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StringCalculatorTests - 2018.12.19 at 10h 09m 57s.xml">
+    <history-entry file="StringCalculatorTests - 2018.12.19 at 11h 21m 16s.xml">
       <configuration name="StringCalculatorTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StringCalculatorTests - 2018.12.19 at 10h 11m 00s.xml">
+    <history-entry file="StringCalculatorTests - 2018.12.19 at 11h 21m 24s.xml">
       <configuration name="StringCalculatorTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StringCalculatorTests - 2018.12.19 at 10h 28m 20s.xml">
+    <history-entry file="StringCalculatorTests - 2018.12.19 at 11h 21m 36s.xml">
       <configuration name="StringCalculatorTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StringCalculatorTests - 2018.12.19 at 10h 31m 17s.xml">
+    <history-entry file="StringCalculatorTests - 2018.12.19 at 11h 22m 16s.xml">
+      <configuration name="StringCalculatorTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StringCalculatorTests - 2018.12.19 at 11h 23m 00s.xml">
+      <configuration name="StringCalculatorTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StringCalculatorTests - 2018.12.19 at 11h 25m 40s.xml">
       <configuration name="StringCalculatorTests" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2391000" />
+    <option name="totallyTimeSpent" value="5518000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="947" extended-state="0" />
@@ -269,17 +276,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/StringCalculator/StringCalculator.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/StringCalculator/StringCalculatorTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="166">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/StringCalculator/StringCalculatorTests.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/StringCalculator/StringCalculator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
-          <caret line="35" column="32" lean-forward="true" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
+        <state relative-caret-position="209">
+          <caret line="16" column="65" selection-start-line="16" selection-start-column="65" selection-end-line="16" selection-end-column="65" />
         </state>
       </provider>
     </entry>

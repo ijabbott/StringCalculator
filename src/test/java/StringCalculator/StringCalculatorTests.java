@@ -35,4 +35,11 @@ public class StringCalculatorTests {
         int result = calculator.add("1\n1");
         assertEquals(2, result);
     }
+
+    @Test
+    public void AddGivenSemicolonDelimiterStringOneOneReturnsTwo() {
+        StringCalculator calculator = new StringCalculator();
+        int result = calculator.add("//;\n1;1");
+        assertEquals(2, result);
+    }
 }
