@@ -5,7 +5,17 @@ package StringCalculator;
 
 public class StringCalculator {
 
-    public int add(String s) {
-        return 0;
+    public int add(String string) {
+        int result = 0;
+
+        if(string.isEmpty()) {
+            return 0;
+        }
+
+        String[] array = string.split(",");
+        for(String s : array) {
+            result += Integer.parseInt(s);
+        }
+        return result;
     }
 }
