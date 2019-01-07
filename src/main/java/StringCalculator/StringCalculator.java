@@ -3,28 +3,7 @@
  */
 package StringCalculator;
 
-import java.util.Arrays;
 
 public class StringCalculator {
 
-    public int add(String string) {
-        int result = 0;
-
-        if(string.isEmpty()) {
-            return 0;
-        }
-
-        String str = string.replace('\n', ',').replace("//", ",");
-        String[] array = str.split(",");
-
-        String str3;
-        if(!array[0].matches("-?\\d+(\\.\\d+)?")) {
-            array = array[2].split(array[1]);
-        }
-
-        for(String s : array) {
-            result += Integer.parseInt(s);
-        }
-        return result;
-    }
 }

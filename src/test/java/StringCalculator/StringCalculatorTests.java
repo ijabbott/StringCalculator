@@ -8,38 +8,10 @@ import static org.junit.Assert.*;
 
 public class StringCalculatorTests {
 
-    @Test
-    public void AddGivenEmptyStringReturnsZero() {
-        StringCalculator calculator = new StringCalculator();
-        int result = calculator.add("");
-        assertEquals(0, result);
-    }
+    /*@Test
+    public void Template() {
+        assertEquals(0, 0);
+    }*/
 
-    @Test
-    public void AddGivenStringOneReturnsOne() {
-        StringCalculator calculator = new StringCalculator();
-        int result = calculator.add("1");
-        assertEquals(1, result);
-    }
 
-    @Test
-    public void AddGivenStringOneOneReturnsTwo() {
-        StringCalculator calculator = new StringCalculator();
-        int result = calculator.add("1,1");
-        assertEquals(2, result);
-    }
-
-    @Test
-    public void AddGivenStringOneNewlineOneReturnsTwo() {
-        StringCalculator calculator = new StringCalculator();
-        int result = calculator.add("1\n1");
-        assertEquals(2, result);
-    }
-
-    @Test
-    public void AddGivenSemicolonDelimiterStringOneOneReturnsTwo() {
-        StringCalculator calculator = new StringCalculator();
-        int result = calculator.add("//;\n1;1");
-        assertEquals(2, result);
-    }
 }
