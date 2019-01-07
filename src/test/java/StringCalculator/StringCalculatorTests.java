@@ -13,5 +13,25 @@ public class StringCalculatorTests {
         assertEquals(0, 0);
     }*/
 
+    @Test
+    public void AddReturnsZeroWhenPassedEmptyString() {
+        StringCalculator calculator = new StringCalculator();
+        int result = calculator.add("");
+        assertEquals(result, 0);
+    }
+
+    @Test
+    public void AddReturnsNumberWhenPassedSingleNumber() {
+        StringCalculator calculator = new StringCalculator();
+        int result = calculator.add("1");
+        assertEquals(result, 1);
+    }
+
+    @Test
+    public void AddReturnsSumWhenPassedTwoNumbers() {
+        StringCalculator calculator = new StringCalculator();
+        int result = calculator.add("1,2");
+        assertEquals(result, 3);
+    }
 
 }

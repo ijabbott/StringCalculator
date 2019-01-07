@@ -6,4 +6,17 @@ package StringCalculator;
 
 public class StringCalculator {
 
+    public int add(String s) {
+        if(s.isEmpty()) {
+            return 0;
+        }
+
+        int result = 0;
+
+        for(String operand : s.split(",")) {
+            result += Integer.parseInt(operand);
+        }
+
+        return result;
+    }
 }
