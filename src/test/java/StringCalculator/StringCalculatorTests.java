@@ -3,35 +3,53 @@
  */
 package StringCalculator;
 
+import org.junit.Before;
 import org.junit.Test;
-import static org.junit.Assert.*;
+
+import static org.junit.Assert.assertEquals;
 
 public class StringCalculatorTests {
 
-    /*@Test
-    public void Template() {
-        assertEquals(0, 0);
-    }*/
+    private StringCalculator calculator;
+
+    @Before
+    public void before() {
+        calculator = new StringCalculator();
+    }
 
     @Test
     public void AddReturnsZeroWhenPassedEmptyString() {
-        StringCalculator calculator = new StringCalculator();
         int result = calculator.add("");
         assertEquals(result, 0);
     }
 
     @Test
     public void AddReturnsNumberWhenPassedSingleNumber() {
-        StringCalculator calculator = new StringCalculator();
         int result = calculator.add("1");
         assertEquals(result, 1);
     }
 
     @Test
-    public void AddReturnsSumWhenPassedTwoNumbers() {
-        StringCalculator calculator = new StringCalculator();
-        int result = calculator.add("1,2");
-        assertEquals(result, 3);
+    public void AddReturnsSumWhenPassedMultipleNumbers() {
+        int result = calculator.add("1,2,3");
+        assertEquals(result, 6);
     }
 
+    @Test
+    public void AddReturnsSumWhenPassedMultipleNumbersWithNewLineDelimiter() {
+        int result = calculator.add("1\n2\n3");
+        assertEquals(result, 6);
+    }
+
+    @Test
+    public void AddReturnsSumWhenPassedMultipleNumbersWithNewLineAndCommaDelimiter() {
+        int result = calculator.add("1,2\n3");
+        assertEquals(result, 6);
+    }
+
+    @Test
+    public void AddReturnsSumWhenPassedMultipleNumbersWithDifferentDelimiter() {
+        int result = calculator.add("//;\n1;2");
+        assertEquals(result, 3);
+    }
 }

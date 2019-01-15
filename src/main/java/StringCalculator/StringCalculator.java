@@ -12,8 +12,14 @@ public class StringCalculator {
         }
 
         int result = 0;
+        String delimiter = ",|\n";
 
-        for(String operand : s.split(",")) {
+        if(s.startsWith("//")) {
+            delimiter = s.substring(2,3);
+            s = s.substring(4);
+        }
+
+        for(String operand : s.split(delimiter)) {
             result += Integer.parseInt(operand);
         }
 
