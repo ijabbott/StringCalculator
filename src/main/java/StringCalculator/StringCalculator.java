@@ -8,24 +8,30 @@ import java.security.InvalidParameterException;
 
 public class StringCalculator {
 
+    private final String ERROR_MESSAGE = "negatives not allowed";
+
     public int add(String s) throws InvalidParameterException {
         if(s.isEmpty()) {
             return 0;
         }
 
         int result = 0;
-        String delimiter = ",|\n";
+        String delimiter = s.startsWith("//") ? s.substring(2,3) : ",|\n";
 
         if(s.startsWith("//")) {
-            delimiter = s.substring(2,3);
             s = s.substring(4);
         }
 
+        String errorMessage = ERROR_MESSAGE;
         for(String operand : s.split(delimiter)) {
             if(Integer.parseInt(operand) < 0) {
-                throw new InvalidParameterException("negatives not allowed " + operand);
+                errorMessage = errorMessage.concat(" " + operand);
             }
             result += Integer.parseInt(operand);
+        }
+
+        if(errorMessage.length() > ERROR_MESSAGE.length()) {
+            throw new InvalidParameterException(errorMessage);
         }
 
         return result;

@@ -66,4 +66,11 @@ public class StringCalculatorTests {
         thrown.expectMessage("negatives not allowed " + "-1");
         calculator.add("-1");
     }
+
+    @Test
+    public void AddReturnsThrowsExceptionWhenPassedMultipleNegativeOperands() {
+        thrown.expect(InvalidParameterException.class);
+        thrown.expectMessage("negatives not allowed " + "-1 -2");
+        calculator.add("-1,-2");
+    }
 }
