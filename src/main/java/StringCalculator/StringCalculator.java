@@ -4,9 +4,11 @@
 package StringCalculator;
 
 
+import java.security.InvalidParameterException;
+
 public class StringCalculator {
 
-    public int add(String s) {
+    public int add(String s) throws InvalidParameterException {
         if(s.isEmpty()) {
             return 0;
         }
@@ -20,6 +22,9 @@ public class StringCalculator {
         }
 
         for(String operand : s.split(delimiter)) {
+            if(Integer.parseInt(operand) < 0) {
+                throw new InvalidParameterException("negatives not allowed " + operand);
+            }
             result += Integer.parseInt(operand);
         }
 
