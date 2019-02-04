@@ -16,24 +16,28 @@ public class StringCalculator {
         }
 
         int result = 0;
-        String delimiter = s.startsWith("//") ? s.substring(2,3) : ",|\n";
 
-        if(s.startsWith("//")) {
-            s = s.substring(4);
-        }
+        String expression = s.startsWith("//") ? s.substring(4) : s;
+        String delimiter = getDelimiter(s);
 
-        String errorMessage = ERROR_MESSAGE;
-        for(String operand : s.split(delimiter)) {
+        String errorMessage = "";
+        for(String operand : expression.split(delimiter)) {
             if(Integer.parseInt(operand) < 0) {
                 errorMessage = errorMessage.concat(" " + operand);
             }
-            result += Integer.parseInt(operand);
+            if(Integer.parseInt(operand) <= 1000) {
+                result += Integer.parseInt(operand);
+            }
         }
 
-        if(errorMessage.length() > ERROR_MESSAGE.length()) {
-            throw new InvalidParameterException(errorMessage);
+        if(errorMessage.length() > 0) {
+            throw new InvalidParameterException(ERROR_MESSAGE + errorMessage);
         }
 
         return result;
+    }
+
+    private String getDelimiter(String s) {
+        return s.startsWith("//") ? s.substring(2,3) : ",|\n";
     }
 }

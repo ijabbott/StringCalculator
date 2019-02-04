@@ -73,4 +73,28 @@ public class StringCalculatorTests {
         thrown.expectMessage("negatives not allowed " + "-1 -2");
         calculator.add("-1,-2");
     }
+
+    @Test
+    public void AddShouldIgnoreValueGreaterThan1000() {
+        int result = calculator.add("1001");
+        assertEquals(result, 0);
+    }
+
+    @Test
+    public void AddReturnsSumWhileIgnoringValueGreaterThan1000() {
+        int result = calculator.add("1001,2");
+        assertEquals(result, 2);
+    }
+
+    @Test
+    public void AddReturnsSumWhileIncludingValueEqualTo1000() {
+        int result = calculator.add("1000,2");
+        assertEquals(result, 1002);
+    }
+
+    @Test
+    public void AddReturnsSumWhenPassedMultipleNumbersWithAnyLengthDelimiter() {
+        int result = calculator.add("//[***]\n1***2");
+        assertEquals(result, 3);
+    }
 }
